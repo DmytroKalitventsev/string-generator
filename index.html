@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Random String Generator</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="string-generator">
+			<h2 class="string-generator__title">Random String Generator</h2>
+			<form class="generator-form" name="stringGenerator">
+				<label class="generator-form__string-length">
+					<span>String should be</span>
+					<input name="stringLength" type="number" min="1" max="100">
+					<span>characters long.</span>
+				</label>
+				<fieldset class="generator-form__group-label" name="generatorData">
+					<span>Which characters are allowed to occur in the strings?</span>
+					<label>
+						<input name="number" type="checkbox" value="0123456789">
+						<span>Numeric digits (0-9)</span>
+					</label>
+					<label>
+						<input name="uppercaseLetters" type="checkbox" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
+						<span>Uppercase letters (A-Z)</span>
+					</label>
+					<label>
+						<input name="lowercaseLetters" type="checkbox" value="abcdefghijklmnopqrstuvwxyz">
+						<span>Lowercase letters (a-z)</span>
+					</label>
+				</fieldset>
+				<button type="submit">Generate</button>
+				<label class="generator-form__result">
+					<span>Result:</span>
+					<input name="result" type="text" placeholder="Your string will be here...">
+				</label>
+			</form>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.7.0.js"
+		integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous">
+		</script>
+	<script src="script.js"></script>
+</body>
+
+</html>
